@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "jest --config ./jest.config.js",
     "prettier": "prettier --write \"**/*.{html,js,md,yml}\""
   },
   "husky": {
@@ -22,21 +23,26 @@
   "dependencies": {
     "lodash.map": "^4.6.0",
     "next": "9.4.4",
-    "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "styled-jsx": "^3.3.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.1",
+    "@testing-library/react": "^10.4.7",
+    "babel-jest": "^26.1.0",
     "eslint": "^7.4.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.18.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
     "husky": "^4.2.5",
+    "jest": "^26.1.0",
     "lint-staged": "^10.2.11",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "prop-types": "^15.7.2"
   }
 }

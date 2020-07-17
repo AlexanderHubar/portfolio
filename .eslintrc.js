@@ -4,7 +4,7 @@ module.exports = {
     node: true,
     es2020: true,
   },
-  plugins: ["react", "prettier"],
+  plugins: ["react", "prettier", "jest"],
   extends: [
     "airbnb",
     "plugin:react/recommended",
@@ -12,9 +12,11 @@ module.exports = {
     "plugin:import/warnings",
     "prettier",
     "prettier/react",
+    "plugin:jest/recommended",
   ],
   rules: {
     "import/extensions": 0,
+    "import/no-extraneous-dependencies": "off",
     "react/jsx-filename-extension": "off",
     "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
