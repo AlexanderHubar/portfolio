@@ -52,8 +52,9 @@ class MyDocument extends Document {
 
             .page__container {
               width: 100%;
-              max-width: 1140px;
+              max-width: calc(1140px + 1rem);
               margin: 0 auto;
+              padding: 0 1rem;
             }
 
             .page__body {
